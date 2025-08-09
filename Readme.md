@@ -6,7 +6,7 @@ clash verge 脚本
  * 不要让小头控制大头
  */
 const NoSexRules = [
-  "DOMAIN-SUFFIX,pixiv.net,REJECT",
+  "DOMAIN-SUFFIX,pixiv.net,REJECT",//扪心自问一下，你上p站到底是为了看色图还是看全年龄作品
   "DOMAIN-SUFFIX,wnacg.com,REJECT",  
   "DOMAIN-KEYWORD,porn,REJECT",
   "DOMAIN-KEYWORD,spank,REJECT",
@@ -26,5 +26,6 @@ function main(config) {
   return config;
 }
 ```
+
 
 
