@@ -12,7 +12,7 @@ const NoSexRules = [
   "DOMAIN-KEYWORD,spank,REJECT",
   "DOMAIN-KEYWORD,xxx,REJECT",
   "DOMAIN-SUFFIX,18comic.vip,REJECT",
-  "DOMAIN-SUFFIX,www.xnxx.com,REJECT"
+  "DOMAIN-SUFFIX,www.xnxx.com,REJECT",
   "DOMAIN-SUFFIX,xhamster.com,REJECT",
   "DOMAIN-SUFFIX,xvideos.com,REJECT",       
   "DOMAIN-SUFFIX,spankbang.com,REJECT",
@@ -26,4 +26,5 @@ function main(config) {
   return config;
 }
 ```
+
 
