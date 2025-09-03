@@ -1,4 +1,4 @@
-# clash verge 脚本
+# clash verge rev 脚本 
 
 下定决心戒色时写的
 
@@ -41,6 +41,7 @@ function main(config) {
   return config;
 }
 ```
+
 
 
 
