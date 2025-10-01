@@ -27,6 +27,9 @@ const NoSexRules = [
   "DOMAIN-KEYWORD,sex,REJECT",
   "DOMAIN-KEYWORD,r18,REJECT",
   "DOMAIN-SUFFIX,18comic.vip,REJECT",
+
+  "DOMAIN-SUFFIX,www.zhihu.com,REJECT", //我讨厌戾气深重的知乎（性、鉴证、讽刺论战
+
   "DOMAIN-SUFFIX,www.xnxx.com,REJECT",
   "DOMAIN-SUFFIX,xhamster.com,REJECT",
   "DOMAIN-SUFFIX,xvideos.com,REJECT",       
@@ -41,6 +44,7 @@ function main(config) {
   return config;
 }
 ```
+
 
 
 
