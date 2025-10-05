@@ -20,7 +20,7 @@
  */
 const NoSexRules = [
   "DOMAIN-SUFFIX,pixiv.net,REJECT",//扪心自问一下，你上p站到底是为了看色图还是为了看全年龄作品
-  "DOMAIN-SUFFIX,wnacg.com,REJECT",  
+  "DOMAIN-SUFFIX,wnacg.com,REJECT",
   "DOMAIN-KEYWORD,porn,REJECT",
   "DOMAIN-KEYWORD,spank,REJECT",
   "DOMAIN-KEYWORD,xxx,REJECT",
@@ -28,22 +28,24 @@ const NoSexRules = [
   "DOMAIN-KEYWORD,r18,REJECT",
   "DOMAIN-SUFFIX,18comic.vip,REJECT",
 
-  "DOMAIN-SUFFIX,www.zhihu.com,REJECT", //我讨厌戾气深重的知乎（性、鉴证、讽刺论战
-
   "DOMAIN-SUFFIX,www.xnxx.com,REJECT",
   "DOMAIN-SUFFIX,xhamster.com,REJECT",
-  "DOMAIN-SUFFIX,xvideos.com,REJECT",       
+  "DOMAIN-SUFFIX,xvideos.com,REJECT",
   "DOMAIN-SUFFIX,spankbang.com,REJECT",
   "DOMAIN-SUFFIX,chaturbate.com,REJECT",
   "DOMAIN-SUFFIX,livejasmin.com,REJECT",
   "DOMAIN-SUFFIX,onlyfans.com,REJECT",
 ];
 function main(config) {
-  let oldrules = config["rules"];
-  config["rules"] = NoSexRules.concat(oldrules);
+  config.rules = 
+  ["DOMAIN-SUFFIX,www.zhihu.com,REJECT", //我讨厌戾气深重的知乎（性、鉴证、讽刺论战
+  "DOMAIN-SUFFIX,docs.rs,DIRECT",  //docs.rs 在firefox上无法登上
+  ...NoSexRules, 
+  ...config.rules];
   return config;
 }
 ```
+
 
 
 
